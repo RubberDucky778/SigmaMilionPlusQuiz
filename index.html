@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hádaň obrázkov</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1><span id="welcome-title">Vitajte v hre Hádanie obrázkov!</span></h1>
+        <p><span id="welcome-text">Vašou úlohou je uhádnuť, aky cesky/slovensky rapper je na obrazku. Napíšte svoj tip do políčka a potvrdte ho. Počet správnych odpovedí ovplyvní vaše celkové skóre. Veľa šťastia!</span></p>
+        <button id="start-button"><span id="start-button-text">Začať hru</span></button>
+    </div>
+    <div class="container hidden">
+        <button id="language-button" onclick="toggleLanguage()">Čeština</button>
+        <h1><span id="title">Hádaň obrázkov!</span></h1>
+        <div id="status"><span id="image-status">Obrázok 1 z 22</span></div>
+        <div id="image-container"></div>
+        <input type="text" id="guess-input" placeholder="Zadajte svoj tip...">
+        <div id="tip"><span id="tip-text">Tip: Nepoužívajte veľké písmená.</span></div>
+        <button onclick="checkAnswer()"><span id="submit-button">Potvrdiť</span></button>
+        <div id="feedback" class="hidden"></div>
+        <div id="result" class="hidden">
+            <h2><span id="game-over">Koniec hry!</span></h2>
+            <p><span id="score-text">Skóre:</span> <span id="score">0</span>/<span id="total">0</span></p>
+            <p><span id="grade-text">Známka:</span> <span id="grade">F</span></p>
+            <button onclick="location.reload()"><span id="play-again">Hrať znova</span></button>
+        </div>
+    </div>
+    <script src="api.js"></script>
+</body>
+</html>
