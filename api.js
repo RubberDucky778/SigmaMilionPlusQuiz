@@ -35,7 +35,7 @@ const translations = {
         welcomeTitle: 'Vitajte v hre Hádanie obrázkov!',
         welcomeText: 'Vašou úlohou je uhádnuť, aky cesky/slovensky rapper je na obrazku. Napíšte svoj tip do políčka a potvrdte ho. Počet správnych odpovedí ovplyvní vaše celkové skóre. Veľa šťastia!',
         startButton: 'Začať hru',
-        title: 'Hádaň obrázkov!',
+        title: 'Hádanie obrázkov!',
         imageStatus: 'Obrázok {current} z {total}',
         guessPlaceholder: 'Zadajte svoj tip...',
         submitButton: 'Potvrdiť',
